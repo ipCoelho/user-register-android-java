@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="30dp">
+
+    <TextView
+        android:id="@+id/text_view_endereco"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço!"
+        android:drawableEnd="@drawable/ic_baseline_map_24"
+        android:drawablePadding="10dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/text_view_preencha_dados"
+        app:layout_constraintTop_toBottomOf="@id/text_view_endereco"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Onde você mora?"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_cep"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_preencha_dados"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableStart="@drawable/ic_baseline_code_24"
+        android:textColorHint="#989898"
+        android:hint="CEP"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_cep"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:hint="Número"
+        android:textColorHint="#989898"
+        android:drawableStart="@drawable/ic_baseline_menu_24"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_complemento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_numero"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:hint="Complemento"
+        android:textColorHint="#989898"
+        android:drawableStart="@drawable/ic_baseline_menu_24"
+        android:drawablePadding="10dp"/>
+
+    <Button
+        android:id="@+id/button_cadastrar_salvar_endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_complemento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="Salvar"
+        android:backgroundTint="#9E8E5F" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

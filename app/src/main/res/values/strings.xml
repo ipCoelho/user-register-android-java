@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">User Management</string>
+    <string name="register_true">Cadastrado com sucesso!</string>
+    <string name="register_false">Erro ao cadastrar</string>
+</resources>
